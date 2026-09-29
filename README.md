@@ -1,11 +1,11 @@
 <img src="images/LLM4Models.png" alt="Banner" width="800"/>
 
-# Thesis Artifacts
+# Thesis Artefacts
 
-This repository contains all artifacts used in my thesis, which are classified into four main groups:
+This repository contains all artefacts used in my thesis, which are classified into four main groups:
 
 ## 1. [LLM4Models](./LLM4Models/)  
-Contains models to abstract UML and OCL representations from Java and Python programs.
+Contains models to extract UML and OCL representations from Java and Python programs.
 ## 2. [evaluation](./evaluation/)  
 Provides case studies used to evaluate the LLM4Models approach.
 ## 3. [src](./src/)
@@ -63,7 +63,7 @@ Contains training datasets.
 ---
 
 #### **1. Pre-processing Stage**
-Before starting the inferring process for abstracting UML and OCL representations, a pre-processing stage should be applied to the Java/Python program by executing the **`Preprocessing`** Python script. Configure the following options:
+Before starting the inference process for extracting UML and OCL representations, a pre-processing stage should be applied to the Java/Python program by executing the **`Preprocessing`** Python script. Configure the following options:
 
 **Options:**
 - **Language:** `Java` or `Python`.  
@@ -82,13 +82,13 @@ Before starting the inferring process for abstracting UML and OCL representation
    - **`Test1.py`** for Python code.  
 2. The output will be saved in **`LLM4Models.txt`**.  
 3. Set the **`What_I_Want`** variable:
-   - `1` → Abstract UML class diagrams from Java code.  
-   - `2` → Abstract UML class diagrams from Python code.  
-   - `3` → Abstract OCL specifications from Java code.  
-   - `4` → Abstract OCL specifications from Python code.  
+   - `1` → Extract UML class diagrams from Java code.  
+   - `2` → Extract UML class diagrams from Python code.  
+   - `3` → Extract OCL specifications from Java code.  
+   - `4` → Extract OCL specifications from Python code.  
 4. Set **`Full_Model = True`** to use the full model, or **`Full_Model = False`** to use a LoRA adapter.  
-5. Choose **`version = 1`** or **`version = 2`** or **`version = 3`** or **`version = 4`** for UML abstraction.
-5. Choose **`version = 1`** or **`version = 2`** for OCL abstraction.
+5. Choose **`version = 1`** or **`version = 2`** or **`version = 3`** or **`version = 4`** for UML extraction.
+5. Choose **`version = 1`** or **`version = 2`** for OCL extraction.
 
 ---
 
@@ -105,7 +105,7 @@ Before starting the inferring process for abstracting UML and OCL representation
 - Methods only *(default)*.
 
 **b) OCL Specifications**
-- Apply post-processing using **`PostprocessingOCL`** Python script to convert LLM output into OCL specification files.
+- Apply post-processing using **`PostprocessingOCL`** Python script to convert LLM output into OCL specifications.
 
 ---
 
@@ -116,7 +116,7 @@ Before starting the inferring process for abstracting UML and OCL representation
 
 ### Requirements
 
-To run the provided inference programs locally, you need:
+To run the provided inference programs, you need:
 
 - Python 3.10+
 - An NVIDIA GPU with CUDA support
@@ -134,9 +134,9 @@ Install the required Python packages with:
 pip install -r requirements.txt
 ```
 
-The programs use Hugging Face Transformers and PEFT to load the Mistral or DeepSeek-Coder models and their fine-tuned adapters.
+The programs use Hugging Face Transformers and PEFT to load the Mistral model and fine-tuned adapters.
 
-> **Note:** Running the models locally requires sufficient GPU memory. The required GPU memory depends on whether you use the full model or the LoRA adapter version.
+> **Note:** Running the models requires sufficient GPU memory. The required GPU memory depends on whether you use the full model or the LoRA adapter version.
 ---
 
 ### Available Programs
@@ -144,7 +144,7 @@ The programs use Hugging Face Transformers and PEFT to load the Mistral or DeepS
 The repository provides inference programs for:
 
 - **Extracting UML Class diagrams from Java and Python programs**
-- **Extracting UML OCL specifications from Java and Python programs**  
+- **Extracting OCL specifications from Java and Python programs**  
 - **Mistral-based** fine-tuned models
 - **LoRA adapter** and **full-model** inference
 
@@ -162,17 +162,17 @@ For users who prefer a graphical interface, a Gradio-based interface is also ava
 
 If you use this repository or reference the thesis, please cite:
 
-**Model-driven Approaches for Reverse Engineering, PhD Thesis, Hanan Abdulwahab Siala, supervised by Kevin Lano and Gunel Jahangirova, 2025, King's College London**
+**Model-driven Approaches for Reverse Engineering, PhD Thesis, Hanan Abdulwahab Siala, supervised by Kevin Lano and Gunel Jahangirova, 2026, King's College London**
 
 ---
 
 ### BibTeX
 ```bibtex
-@phdthesis{siala2025reverse,
+@phdthesis{siala2026reverse,
   title        = {Model-driven Approaches for Reverse Engineering},
   author       = {Hanan Abdulwahab Siala},
   school       = {King's College London},
-  year         = {2025},
+  year         = {2026},
   note         = {PhD Thesis. Supervised by Kevin Lano and Gunel Jahangirova}
 }
 ```
