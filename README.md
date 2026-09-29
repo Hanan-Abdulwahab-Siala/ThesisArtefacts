@@ -97,7 +97,7 @@ Before starting the inference process for extracting UML and OCL representations
 **a) UML Class Diagrams**
 - Apply post-processing to the output of **`LLM4Models`** LLM using:
   1. **`PostprocessingUML`** Python script — splits LLM output into two files in JSON format (`Test1.UML` and `Test1.REL`).  
-  2. **`DrawingClassDiagram`** Python script — generates a UML class diagram from the two JSON files using the **Graphviz** tool and saves it as `Test1.png`. Please install the Graphviz tool before running the script.
+  2. **`DrawingClassDiagram`** Python script — generates a UML class diagram from the two JSON files using the **Graphviz** tool and saves it as `Test1.png`, `Test1.pdf`, or `Test1.svg`. Please install the Graphviz tool before running the script.
 
 **Method display options:**
 - Methods with parameters’ names and types.  
@@ -105,7 +105,7 @@ Before starting the inference process for extracting UML and OCL representations
 - Methods only *(default)*.
 
 **b) OCL Specifications**
-- Apply post-processing using **`PostprocessingOCL`** Python script to convert LLM output to OCL specifications.
+- Apply post-processing using **`PostprocessingOCL`** Python script to the output of LLM4Models LLM.
 
 ---
 
@@ -145,7 +145,6 @@ The repository provides inference programs for:
 
 - **Extracting UML Class diagrams from Java and Python programs**
 - **Extracting OCL specifications from Java and Python programs**  
-- **Mistral-based** fine-tuned models
 - **LoRA adapter** and **full-model** inference
 
 For the LoRA versions, the base model is downloaded automatically from Hugging Face, and the corresponding fine-tuned adapter is loaded.
