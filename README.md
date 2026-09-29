@@ -152,9 +152,10 @@ For the LoRA versions, the base model is downloaded automatically from Hugging F
 
 For the full-model versions, the fine-tuned model is loaded directly from Hugging Face.
 
-### Gradio Interface
+<!-- ### Gradio Interface
 
 For users who prefer a graphical interface, a Gradio-based interface is also available in the related GitHub repository, [LLM4Models](https://github.com/Hanan-Abdulwahab-Siala/LLM4Models).
+-->
 
 ---
 
