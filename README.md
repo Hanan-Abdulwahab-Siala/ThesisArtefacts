@@ -56,7 +56,7 @@ Contains training datasets.
 ```
 
 ---
-### Inferring Process
+### Inference Process
 <!-- │   ├── Statistics              # Scripts to compare the results of LLM4Models LLM with: 1) the results of Java2JSON and Python2JSON (UML) -->
 <!-- │   │                                                                                    2) the results of the AgileUML toolset (OCL) -->
 
@@ -76,7 +76,7 @@ Before starting the inference process for extracting UML and OCL representations
 
 ---
 
-#### **2. Inferring Stage**
+#### **2. Inference Stage**
 1. Place your program in:
    - **`Test1.java`** for Java code.  
    - **`Test1.py`** for Python code.  
@@ -105,7 +105,7 @@ Before starting the inference process for extracting UML and OCL representations
 - Methods only *(default)*.
 
 **b) OCL Specifications**
-- Apply post-processing using **`PostprocessingOCL`** Python script to convert LLM output into OCL specifications.
+- Apply post-processing using **`PostprocessingOCL`** Python script to convert LLM output to OCL specifications.
 
 ---
 
