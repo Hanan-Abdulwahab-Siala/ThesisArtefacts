@@ -77,7 +77,7 @@ Before starting the inference process for extracting UML and OCL representations
 ---
 
 #### **2. Inference Stage**
-1. Place your program in:
+1. The input program is in:
    - **`Test1.java`** for Java code.  
    - **`Test1.py`** for Python code.  
 2. The output will be saved in **`LLM4Models.txt`**.  
