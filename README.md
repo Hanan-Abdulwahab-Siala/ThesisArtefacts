@@ -156,10 +156,6 @@ For the full-model versions, the fine-tuned model is loaded directly from Huggin
 For users who prefer a graphical interface, a Gradio-based interface is also available in the related GitHub repository, [LLM4Models](https://github.com/Hanan-Abdulwahab-Siala/LLM4Models).
 -->
 
-### Gradio Interface
-
-For users who prefer a graphical interface, a Gradio-based interface is also available in the related GitHub repository, [LLM4Models](https://github.com/Hanan-Abdulwahab-Siala/LLM4Models).
-
 ---
 
 ### Citation
